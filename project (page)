@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <style>
+      h1,
+      h2 {
+        text-align: center;
+        font-size: 30px;
+      }
+      h2 {
+        border: 1px solid;
+        padding: 20px;
+        border-radius: 4px;
+        font-weight: bold;
+      }
+      img {
+        display: block;
+        border-radius: 10px;
+        max-width: 100%;
+        margin: 0 auto;
+      }
+      p {
+        text-align: left;
+        line-height: 1.5;
+        font-size: 20px;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        background: black;
+        opacity: 0.9;
+        color: white;
+        font-size: 20px;
+        font-family: "Cerebri Sans", Helvetica, Arial, sans-serif;
+        padding: 20px 20px;
+        border: none;
+        border-radius: 4px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        opacity: 0.7;
+        cursor: pointer;
+      }
+      .learn {
+        display: block;
+        text-decoration: none;
+        color: black;
+        padding: 20px 20px;
+      }
+      .learn:hover {
+        text-decoration: underline;
+        color: black;
+      }
+      .footer {
+        text-align: center;
+        font-size: 18px;
+        padding: 20px;
+        
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 30px 60px;
+        background: #556e19;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>I love sauces</h1>
+      <h2>Especially pesto</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/971/original/basil-pesto-3733-1.jpeg?1678931218"
+        alt="Pesto"
+      />
+      <p>
+        Pesto is a sauce that traditionally consists of crushed garlic, European
+        pine nuts, coarse salt, basil leaves, and hard cheese such as
+        Parmigiano-Reggiano (also known as Parmesan cheese) or Pecorino Sardo
+        (cheese made from sheep's milk), all blended with olive oil. It
+        originated in Genoa, the capital city of Liguria, Italy.
+        <br />
+        <a
+          href="https://en.wikipedia.org/wiki/Pesto"
+          target="_blank"
+          class="learn"
+        >
+          📚Learn more on Wikipedia
+        </a>
+      </p>
+      <button class="buy">Buy pesto</button>
+      <p class="footer"><em>This page was built by Yanina Hurskaya</p>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email?");
+        alert("Thank you, " + name + "! We'll be in touch by email!");
+      }
+      let buyButton = document.querySelector(".buy");
+      buyButton.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
